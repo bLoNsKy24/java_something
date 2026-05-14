@@ -43,8 +43,8 @@ public class proto_calc {
             double side = input.nextDouble();
             double surface_area = 6.0 * side * side;
             System.out.printf("surface_area: %.4f%n", surface_area);
-            double curved_surface_area = 4.0 * side * side;
-            System.out.printf("curved_surface_area: %.4f%n", curved_surface_area);
+            double lateral_surface_area = 4.0 * side * side;
+            System.out.printf("lateral_surface_area: %.4f%n", lateral_surface_area);
             double volume = side * side * side;
             System.out.printf("volume: %.4f%n", volume);
         } else if (shape.equals("rectangle")) {
@@ -65,9 +65,9 @@ public class proto_calc {
             double height = input.nextDouble();
             double surface_area = 2.0 * (length * breadth + breadth * height + height * length);
             System.out.printf("surface_area: %.4f%n", surface_area);
-            double curved_surface_area = 2.0 * height * (length + breadth);
-            System.out.printf("curved_surface_area: %.4f%n", curved_surface_area);
-            double volume = input.nextDouble();
+            double lateral_surface_area = 2.0 * height * (length + breadth);
+            System.out.printf("lateral_surface_area: %.4f%n", lateral_surface_area);
+            double volume = length * breadth * height;
             System.out.printf("volume: %.4f%n", volume);
         } else if (shape.equals("triangle")) {
             System.out.println("slant_side_a: ");
@@ -106,7 +106,7 @@ public class proto_calc {
             double volume = pi * radius * radius * height;
             System.out.printf("volume: %.4f%n", volume);
         } else {
-            System.out.println("that shape coming soon!\n" + "or, its just a typo.");
+            System.out.println("that shape is coming soon!\n" + "or, maybe its just a typo.");
         }
     }
 }
